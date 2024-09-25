@@ -49,3 +49,5 @@ def wrangle(filepath):
     df = pd.read_csv(filepath, encoding = 'latin1')
     df.drop(columns = ['Country', 'State'])
     return df
+
+df = wrangle('telco.csv')
